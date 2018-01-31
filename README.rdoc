@@ -1,0 +1,33 @@
+= Excel Parser Pro
+An excel parser that does exactly and only what it is meant to with minimal usage of memory and time
+== Installation
+
+  gem install excel_parser_pro
+
+Or add to Gemfile
+  gem 'excel_parser_pro'
+
+== Usage
+Access book via
+  book = ExcelParser::Workbook.new(document.url)
+  first_sheet = book.sheets[0]
+  rows = first_sheet.rows
+  rows.each do |row|
+    p row # prints each row
+  end
+
+== Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Send me a pull request.
+
+
+== Contributers
+
+Thanks to everyone for their interest and their valuable feedback.
+* vivektripathi (Vivek Tripathi) - vivektripathi_cse@hotmail.com
+
+== Copyright
+
+Copyright (c) 2016, released under the MIT license.
